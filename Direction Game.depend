@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1696427735 source:c:\users\clepm\onedrive\documents\c++ code blocks projects\direction game\main.cpp
+	<iostream>
+	<cstdlib>
+
