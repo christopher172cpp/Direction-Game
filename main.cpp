@@ -10,6 +10,7 @@ the students must match the direction or be considered out.
 TODO
 Generate basic structure (done)
 Create Random Number (done)
+Create the function to loop # of times (done)
 Create a countdown maybe
 Create an automatic mode
 
@@ -28,24 +29,27 @@ void credits();
 
 int main()
 {
-    cout << "Hello world!" << endl;
-
     menue();
-    //Start Game
-    //Credits
-
-
-
     return 0;
 }
 //------------------------------------------------------------------------------------
 void menue(){
 
+    cout << "$$___$$___________$$__________________________________" << endl;
+    cout << "$$___$$__$$$$_____$$_____$$$$____$$$$___$$$$$$___$$$$_" << endl;
+    cout << "$$_$_$$_$$__$$____$$____$$__$$__$$__$$__$$_$_$$_$$__$$" << endl;
+    cout << "$$_$_$$_$$__$$____$$____$$______$$__$$__$$_$_$$_$$__$$" << endl;
+    cout << "$$_$_$$_$$$$$$____$$____$$______$$__$$__$$_$_$$_$$$$$$" << endl;
+    cout << "_$$_$$__$$________$$____$$______$$__$$__$$_$_$$_$$____" << endl;
+    cout << "_$$_$$__$$________$$____$$__$$__$$__$$__$$_$_$$_$$____" << endl;
+    cout << "_$$_$$___$$$$___$$$$$$___$$$$____$$$$___$$___$$__$$$$\n" << endl;
+
+
     bool menueAgain = true;
     int input;
     int numberOfRounds;
 
-    cout << "This is the menue function \n";
+
 
     do{
         cout << "Welcome To Direction" << endl;
@@ -87,14 +91,8 @@ void playGame(int numberOfRounds){
     cout << "Play Game\n";
     // pause system when ready press enter
     for(int i = 0; i < numberOfRounds;i++){
-        // round ___
-        // randomly generate a direction
-        //Direction image
-        //pause system to generate next image
 
-        while(i != numberOfRounds){
-
-            cout << "Round " << i << endl;
+            cout << "Round " << i +1 << endl;
             cout << "Ready ? ..." << endl;
             system("pause");
             int randomNum = rand() % 3;
@@ -114,19 +112,9 @@ void playGame(int numberOfRounds){
                 cout << "num generated = " << randomNum << endl;
                 break;
             }
-        }
-
-
 
     }
-    //how many rounds
-    //starting now
-    // Round ____
-    //generate direction
-    //pause wait for input
-    //next round continue until rounds are over
-    //
-    //Need Random number generator
+
 }
 
 bool exitGame(){
@@ -139,16 +127,46 @@ bool exitGame(){
 
 void upDirection(){
     cout << "UP" << endl;
+    cout << "     ." << endl;
+cout << "   .:;:." << endl;
+cout << " .:;;;;;:." << endl;
+cout << "   ;;;;;" << endl;
+cout << "   ;;;;;" << endl;
+cout << "   ;;;;;" << endl;
+cout << "   ;;;;;" << endl;
+cout << "   ;:;;;" << endl;
+cout << "   : ;;;" << endl;
+cout << "     ;:;" << endl;
+cout << "   . :.;" << endl;
+cout << "     . :" << endl;
+cout << "   .   ." << endl;
+cout << "" << endl;
+cout << "      ." << endl;
+
 }
 
 void leftDirection(){
     cout << "LEFT" << endl;
+    cout << "       ." << endl;
+cout << "     .;;............ .." << endl;
+cout << "   .;;;;::::::::::::.." << endl;
+cout << "    ':;;:::::::::::: . ." << endl;
+cout << "      ':" << endl;
+
 }
 
 void rightDirection(){
     cout << "RIGHT" << endl;
+    cout << "                  ." << endl;
+cout << "   .. ............;;." << endl;
+cout << "    ..::::::::::::;;;;." << endl;
+cout << "  . . ::::::::::::;;:'" << endl;
+cout << "                  :'" << endl;
+
 }
 
 void credits(){
     cout << "CREDITS" << endl;
+    cout << "I wanna thank me for taking no days off \n";
+
 }
