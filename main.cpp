@@ -1,5 +1,7 @@
 #include <iostream>
 #include <cstdlib>
+#include <chrono>
+#include <thread>
 
 /*
 Random direction generator to play at timber lakes elementary
@@ -11,7 +13,7 @@ TODO
 Generate basic structure (done)
 Create Random Number (done)
 Create the function to loop # of times (done)
-Create a countdown maybe
+Create a countdown maybe (in progress)
 Create an automatic mode
 
 */
@@ -20,6 +22,7 @@ using namespace std;
 
 void menue();
 void playGame(int);
+void countDown(int);
 bool exitGame();
 void upDirection();
 void leftDirection();
@@ -93,8 +96,9 @@ void playGame(int numberOfRounds){
     for(int i = 0; i < numberOfRounds;i++){
 
             cout << "Round " << i +1 << endl;
-            cout << "Ready ? ..." << endl;
-            system("pause");
+            cout << "Ready ? ...";
+            countDown(5);
+            cout << endl;
             int randomNum = rand() % 3;
             switch(randomNum)
             {
@@ -113,9 +117,20 @@ void playGame(int numberOfRounds){
                 break;
             }
 
+            cout << "Next Round" << endl;
+            system("pause");
+
     }
 
 }
+
+void countDown(int seconds){
+    for(int i = 0; i < seconds; i++){
+        cout << " " << seconds - i << " " ;
+        this_thread::sleep_for(chrono::seconds(1));
+    }
+}
+
 
 bool exitGame(){
     cout << "Exiting Game... Press enter to exit \n";
