@@ -37,7 +37,7 @@ int main()
 }
 //------------------------------------------------------------------------------------
 void menue(){
-
+/* old welecome
     cout << "$$___$$___________$$__________________________________" << endl;
     cout << "$$___$$__$$$$_____$$_____$$$$____$$$$___$$$$$$___$$$$_" << endl;
     cout << "$$_$_$$_$$__$$____$$____$$__$$__$$__$$__$$_$_$$_$$__$$" << endl;
@@ -46,6 +46,22 @@ void menue(){
     cout << "_$$_$$__$$________$$____$$______$$__$$__$$_$_$$_$$____" << endl;
     cout << "_$$_$$__$$________$$____$$__$$__$$__$$__$$_$_$$_$$____" << endl;
     cout << "_$$_$$___$$$$___$$$$$$___$$$$____$$$$___$$___$$__$$$$\n" << endl;
+*/
+
+cout << "                                                    _..._                  .-'''-.                " << endl;
+cout << "_______                                          .-'_..._''.              '   _    \\              " << endl;
+cout << "\\  ___ `'.   .--.              __.....__       .' .'      '.\\      .--. /   /` '.   \\    _..._    " << endl;
+cout << " ' |--.\\  \\  |__|          .-''         '.    / .'                 |__|.   |     \\  '  .'     '.  " << endl;
+cout << " | |    \\  ' .--..-,.--.  /     .-''\"'-.  `. . '               .|  .--.|   '      |  '.   .-.   . " << endl;
+cout << " | |     |  '|  ||  .-. |/     /________\\   \\| |             .' |_ |  |\\    \\     / / |  '   '  | " << endl;
+cout << " | |     |  ||  || |  | ||                  || |           .'     ||  | `.   ` ..' /  |  |   |  | " << endl;
+cout << " | |     ' .'|  || |  | |\\    .-------------'. '          '--.  .-'|  |    '-...-'`   |  |   |  | " << endl;
+cout << " | |___.' /' |  || |  '-  \\    '-.____...---. \\ '.          .|  |  |  |               |  |   |  | " << endl;
+cout << "/_______.'/  |__|| |       `.             .'   '. `._____.-'/|  |  |__|               |  |   |  | " << endl;
+cout << "\\_______|/       | |         `''-...... -'       `-.______ / |  '.'                   |  |   |  | " << endl;
+cout << "                 |_|                                      `  |   /                    |  |   |  | " << endl;
+cout << "                                                             `'-'                     '--'   '--' " << endl;
+
 
 
     bool menueAgain = true;
@@ -181,7 +197,12 @@ cout << "                  :'" << endl;
 }
 
 void credits(){
-    cout << "CREDITS" << endl;
+    cout << "CREDITS: Coded / created by Christopher Bain\n" << endl;
     cout << "I wanna thank me for taking no days off \n";
+    cout << "Made possible with the help of Josias Bain \n";
+    cout << "This is the coded version of a game that I made up on the spot to keep the kids busy at TLE Extended Day\n";
+    cout << "In the first version of the game we would stand on stage and Josias would choose a random direction \n";
+    cout << "the reason down is not an option is because when we did this game in person\n";
+    cout << "if he choose down the kids wouldnt be able to see his hands because he isnt facing them";
 
 }

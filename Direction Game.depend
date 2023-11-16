@@ -1,5 +1,7 @@
 # depslib dependency file v1.0
-1697147574 source:c:\users\clepm\onedrive\documents\c++ code blocks projects\direction game\main.cpp
+1699592823 source:c:\users\clepm\onedrive\documents\c++ code blocks projects\direction game\main.cpp
 	<iostream>
 	<cstdlib>
+	<chrono>
+	<thread>
 
